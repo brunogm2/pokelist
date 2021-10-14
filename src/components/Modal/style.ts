@@ -31,7 +31,7 @@ export const Header = styled.div`
   display: flex;
   align-content: center;
   flex-direction: column;
-  background-color: #024EA3;
+  background-color: var(--color-letters-reference);
   border-radius: 10px 10px 0px 0px;
 
   >h3{
@@ -48,13 +48,13 @@ export const Thanks = styled.div`
   flex-direction: column;
 
   >h3{
-    color: #fff;
+    color: var(--color-letters-secondary);
     margin-bottom: 10px;
   }
 
   >p{
     font-size: 12px;
-    color: #D2D2D2;
+    color: var(--color-letters-primary);
   }
   
 `;
@@ -73,6 +73,6 @@ export const Checkout = styled.div`
     margin-top: 25px;
 
     >h3{
-        color: #fff;
+        color: var(--color-letters-secondary);
     }
 `;

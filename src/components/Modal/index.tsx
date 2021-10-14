@@ -27,8 +27,10 @@ const Modal: React.FC = ({}) => {
   const dispatch = useDispatch();
   const onDimiss = () => {
     dispatch(hideMessage());
+    dispatch({
+      type: "CARRINHO_LIST_CLEAR",
+    })
   };
-
 
   return ReactDOM.createPortal(
     <>
