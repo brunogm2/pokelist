@@ -27,11 +27,11 @@ export const Description = styled.div`
     padding-left: 15px;
 
     >h4{
-        color: #F9F9F9;
+        color: var(--color-letters-secondary);
     }
 
     >p{
-        color: #F9F9F9;
+        color: var(--color-letters-secondary);
         font-size: 12px;
     }
 `;
@@ -48,7 +48,7 @@ export const ButtonFavorite = styled.div`
     width: 30%;
     height: 60%;
     border-radius: 10px;
-    border: 1px solid #F9F9F9;
+    border: 1px solid var(--color-letters-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,21 +64,21 @@ export const ButtonCart = styled(ButtonFavorite)`
     >h6{
         margin-top: 5px;
         margin-right: 5px;
-        color: #F9F9F9;
+        color: var(--color-letters-secondary);
     }
 
     >h3{
-        color: #F9F9F9;
+        color: var(--color-letters-secondary);
     }
 `;
 
 export const IconFavorite = styled(MdOutlineFavoriteBorder)`
-    color: #F9F9F9;
+    color: var(--color-letters-secondary);
     font-size: 25px;
 `;
 
 export const IconCardList = styled(RiShoppingCart2Line)`
-    color: #F9F9F9;
+    color: var(--color-letters-secondary);
     font-size: 25px;
     margin-left: 20px;
 `;

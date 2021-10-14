@@ -7,18 +7,13 @@ export const CardList = styled.div`
     min-height: 60px;
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #A9A9A9;
+    border-bottom: 1px solid var(--color-border);
     margin-bottom: 20px;
-    /* margin-right: 20px; */
-    /* background-color: red; */
 `;
 
 export const Img = styled.div`
     width: 20%;
     height: 100%;
- 
-
-    /* background-color: green; */
 `;
 
 export const Description = styled.div`
@@ -30,11 +25,11 @@ export const Description = styled.div`
     word-wrap: break-word;
 
     >h4{
-        color: #F9F9F9;
+        color: var(--color-letters-secondary);
     }
 
     >p{
-        color: #F9F9F9;
+        color: var(--color-letters-secondary);
         font-size: 12px;
     }
 `;
@@ -46,13 +41,11 @@ export const Value = styled.div`
     flex-direction: row;
     justify-content: center;
     word-wrap: break-word;
-    /* background-color: red; */
 
 `;
 
 export const SymbolMoney = styled.div`
-    width: 25%;
-    /* height: 100%; */
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,30 +53,29 @@ export const SymbolMoney = styled.div`
     margin-left: 10px;
 
     >h6{
-        color: #F9F9F9;
-        margin-top: 9px;
+        color: var(--color-letters-secondary);
+        margin-top: 4px;
     }
 `;
 
 export const SubValue = styled.div`
-    width: 100%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     word-wrap: break-word;
     margin: 5px;
 
-    >h3{
-        color: #F9F9F9;
+    >h4{
+        color: var(--color-letters-secondary);
     }
 
 `;
 
 
 export const Action = styled.div`
-    width: 30%;
+    width: 50%;
     height: 100%;
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -91,30 +83,38 @@ export const Action = styled.div`
 `;
 
 export const ButtonFavorite = styled.div`
-    width: 50%;
-    height: 60%;
-    /* background-color: blueviolet; */
+    width: 50px;
+    height: 40px;
     border-radius: 10px;
-    border: 1px solid #F9F9F9;
+    border: 1px solid var(--color-letters-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 `;
 
-export const ButtonCart = styled(ButtonFavorite)`
+export const ButtonCart = styled.div`
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--color-letters-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     background-color: black;
     margin-left: 10px;
     border: none;
 `;
 
 export const IconFavorite = styled(MdOutlineFavoriteBorder)`
-    color: #F9F9F9;
+    color: var(--color-letters-secondary);
     font-size: 25px;
 `;
 
 export const IconCardList = styled(RiShoppingCart2Line)`
-    color: #F9F9F9;
+    color: var(--color-letters-secondary);
     font-size: 25px;
 `;
 
