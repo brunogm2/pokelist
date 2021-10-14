@@ -76,7 +76,7 @@ function Start() {
                 </HighlightSession>
                 <RankingSession>
                     <PremiumCard>
-                        <h3>Platasformas</h3>
+                        <h3>Plataformas</h3>
                         <DownloadApp>
                          <ImgApp>
                           <img src={pokemonapp} alt="plataformas" style={{width: '100%', height:'100%', borderRadius: '10px'}} />     
