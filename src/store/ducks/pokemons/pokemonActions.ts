@@ -14,11 +14,7 @@ export const GetPokemonList = (page: any) => async (dispatch: Dispatch) => {
             type: "POKEMON_LIST_LOADING"
         })
 
-        api.get<Props>('/pokemon')
-        .then(response => {
-          const data = response.data.count;
-       
-          const generatePokemonPromisses = () => Array<Number>(20).fill(0).map((_, index) =>
+          const generatePokemonPromisses = () => Array<Number>(70).fill(0).map((_, index) =>
               api.get(`/pokemon/${index + 1}`).then((res) => res.data).catch(console.log))
             
           var pokemonPromises = generatePokemonPromisses();
@@ -30,9 +26,7 @@ export const GetPokemonList = (page: any) => async (dispatch: Dispatch) => {
                     payload: pokemon
                 })
           })
-        })
-        
-
+       
     } catch (error) {
         dispatch({
             type: "POKEMON_LIST_FAIL"
