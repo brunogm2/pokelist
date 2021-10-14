@@ -10,4 +10,6 @@ Você podera ver este projeto clicando [aqui](https://pokepokelist.netlify.app/)
 
 # Futuros ajustes:
 
+Responsividade
+
 Validação do formulario usando Formik / Yup
