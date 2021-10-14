@@ -17,3 +17,7 @@ Validação do formulario usando Formik / Yup
 # Como rodar localmente:
 
 Apos o clone do projeto rodar via terminal o comando "npm install" para suas dependencias e logo após startar usando "npm start"
+
+# Obs
+
+Preços fictício
