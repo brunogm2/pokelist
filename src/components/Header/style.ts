@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { MdFavorite } from 'react-icons/md'
-import { RiShoppingCart2Line } from 'react-icons/ri'
+import { RiShoppingCart2Line, RiHome8Line } from 'react-icons/ri'
 
 export const Container = styled.div`
     width: 100%;
@@ -11,9 +11,12 @@ export const Container = styled.div`
     justify-content: space-between;
     padding: 50px;
     
+    >h6{
+        color: var(--color-letters-primary);
+        font-size: 28px;
+    }
     >p{
-        color: #D2D2D2;
-        font-size: 32px;
+        color: var(--color-letters-secondary);
     }
 `;
 
@@ -40,7 +43,7 @@ export const Favorites = styled.div`
 export const FavoritesIcon = styled(MdFavorite)  `
      width: 46px;
      height: 42px;
-     fill: #D2D2D2;
+     fill: var(--color-letters-primary);
 `;
 
 export const Cart = styled(Favorites)`
@@ -48,7 +51,34 @@ export const Cart = styled(Favorites)`
 `;
 
 export const CartIcon = styled(RiShoppingCart2Line)`
-    width: 46px;
-    height: 42px;
-    fill: #D2D2D2;
+    width: 41px;
+    height: 41px;
+    fill: var(--color-letters-primary);
+`;
+
+export const CountCart = styled.div`
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: -10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+  
+    >h6{
+        color: var(--color-letters-secondary);
+    }
+`;
+
+export const Home = styled(Favorites)`
+
+`;
+
+export const HomeIcon = styled(RiHome8Line)`
+    width: 41px;
+    height: 41px;
+    fill: var(--color-letters-primary);
 `;
