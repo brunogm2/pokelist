@@ -6,8 +6,6 @@ React | TypeScript | Axios | Redux | Styled-Components | Jest
 
 Um dos principais motivos do Redux e não Context foi sua ferramenta como DevTools dando agilidade e praticidade ao projeto!
 
-Você podera ver este projeto clicando [aqui](https://pokepokelist.netlify.app/).
-
 # Futuros ajustes:
 
 Responsividade
